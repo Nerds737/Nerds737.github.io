@@ -1,181 +1,109 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gadgets 4 Nerds</title>
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.
-		  css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-		  crossorigin="anonymous">
-
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-		  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-		  crossorigin="anonymous" />
-
-	<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadgets 4 Nerds</title>
+        <!-- Link to CSS-->
+    <link rel="stylesheet" href="style.css">
+        <!-- Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
-	<!--NAVIGATION SECTION-->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light py-1 fixed-top">
-		<div class=" container">
-			<img src="logo1.png" alt="">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span><i id="bar" class="fas fa-bars"></i></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
+    <!-- Header -->
+    <header>
+        <!-- Navigation -->
+        <div class="nav container">
+            <a href="#" class="logo">Gadgets 4 Nerds</a>
+            <!-- Shopping Cart Icon -->
+            <i class=' bx bx-cart' id="cart-icon"></i>
+            <!-- Shopping Cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- Content-->
+                <div class="cart-content">
+                   
+                </div>
+                <!-- Total -->
+                <div class=" total">
+                    <div class=" total-title">Total</div>
+                    <div class="total-price">R0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Shop -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- Content -->
+        <div class=" shop-content">
+            <!-- Box 1 -->
+            <div class=" product-box">
+                <img src="product1.jpg" alt="" class="product-img">
+                <h2 class="product-title">NINTENDO SWITCH CONSOLE</h2>
+                <span class=" price">R6990</span>
+                <i class='bx bx-cart add-cart'></i>
+            </div>
+            <!-- Box 2 -->
+            <div class=" product-box">
+                <img src="product2.jpg" alt="" class="product-img">
+                <h2 class="product-title">JABRA ELITE2 EARBUDS</h2>
+                <span class=" price">R999</span>
+                <i class='bx bx-cart add-cart'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class=" product-box">
+                <img src="product3.jpg" alt="" class="product-img">
+                <h2 class="product-title">BELKIN CHARGING PAD</h2>
+                <span class=" price">R499</span>
+                <i class='bx bx-cart add-cart'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class=" product-box">
+                <img src="product4.jpg" alt="" class="product-img">
+                <h2 class="product-title">SKYDIO DRONE 2+</h2>
+                <span class=" price">R14999</span>
+                <i class='bx bx-cart add-cart'></i>
+            </div>
+            <!-- Box 5 -->
+            <div class=" product-box">
+                <img src="product5.jpg" alt="" class="product-img">
+                <h2 class="product-title">SWEAT PROOF GAMING MOUSE</h2>
+                <span class=" price">R899</span>
+                <i class='bx bx-cart add-cart'></i>
+            </div>
+            <!-- Box 6 -->
+            <div class=" product-box">
+                <img src="product6.jpg" alt="" class="product-img">
+                <h2 class="product-title">WIRELESS NECKBAND SPEAKER</h2>
+                <span class=" price">R1700</span>
+                <i class='bx bx-cart add-cart'></i>
+            </div>
+            <!-- Box 7 -->
+            <div class=" product-box">
+                <img src="product7.jpg" alt="" class="product-img">
+                <h2 class="product-title">3D NIGHT LIGHT</h2>
+                <span class=" price">R100</span>
+                <i class='bx bx-cart add-cart'></i>
+            </div>
+            <!-- Box 8 -->
+            <div class=" product-box">
+                <img src="product8.jpg" alt="" class="product-img">
+                <h2 class="product-title">WIRELESS CHARGER AND POWER STRIP</h2>
+                <span class=" price">R560</span>
+                <i class='bx bx-cart add-cart'></i>
+            </div>
+        </div>
+    </section>
+    <!-- Link to JS-->
+    <script src="main.js">
 
-					<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Shop</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Blog</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact Us</a>
-					</li>
-					<li class="nav-item">
-						<i class="fal fa-search"></i>
-						<i class="fal fa-shopping-cart"></i>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<!-- HOME SECTION-->
-	<section id="home">
-		<div class="container">
-			<!--<h5>NEW ARRIVALS</h5>-->
-			<h1><span>Fantastic Prices</span> This Season</h1>
-			<p>Gadgets 4 Nerds offers you<br>loads of awesome deals</p>
-			<button>Explore Now</button>
-		</div>
-	</section>
-
-	<!-- CATEGORY SECTION-->
-			<section id="category" class="container">
-				<div class="row m-0 py-3">
-					<img class="img-fluid col-lg-2 col-md-4 col-6" src="Categories/Cell.png" alt="">
-					<img class="img-fluid col-lg-2 col-md-4 col-6" src="Categories/Gaming.png" alt="">
-					<img class="img-fluid col-lg-2 col-md-4 col-6" src="Categories/Photography.png" alt="">
-					<img class="img-fluid col-lg-2 col-md-4 col-6" src="Categories/VR.png" alt="">
-					<img class="img-fluid col-lg-2 col-md-4 col-6" src="Categories/Simulators.png" alt="">
-
-				</div>
-			</section>
-
-			<!-- NEW FEATURES SECTION-->
-			<section id="new" class="w-100">
-				<div class="row p-0 m-0">
-					<div class="one col-lg-4 col-md-12 col-12 p-0">
-						<img class="img-fluid" src="Categories/Reality.png" alt="">
-						<div class="details">
-							<h2>New Releases</h2>
-							<button class="text-uppercase">Explore Now</button>
-						</div>
-					</div>
-					<div class="one col-lg-4 col-md-12 col-12 p-0">
-						<img class="img-fluid" src="Categories/Sale.jpg" alt="">
-						<div class="details">
-							<h2>50% Off Sale</h2>
-							<button class="text-uppercase">Explore Now</button>
-						</div>
-					</div>
-					<div class="one col-lg-4 col-md-12 col-12 p-0">
-						<img class="img-fluid" src="Categories/Preowned.jpg" alt="">
-						<div class="details">
-							<h2>Pre-Owned Consoles</h2>
-							<button class="text-uppercase">Explore Now</button>
-						</div>
-						<nav aria-label="...">
-							<ul class="pagination">
-								<li class="page-item disabled">
-									<a class="page-link">Previous</a>
-								</li>
-								<li class="page-item"><a class="page-link" href="#">1</a></li>
-								<li class="page-item active" aria-current="page">
-									<a class="page-link" href="#">2</a>
-								</li>
-								<li class="page-item"><a class="page-link" href="#">3</a></li>
-								<li class="page-item">
-									<a class="page-link" href="#">Next</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</section>
-
-			<!-- FOOTER SECTION-->
-			<footer class="mt-5 py-5">
-				<div class="row container mx-auto pt-5">
-					<div class="footer-one col-lg-3 col-d-6 col-12">
-						<img src="logo2.png" alt="" />
-						<p>
-							We are unique <br />
-							Dare to be different
-						</p>
-					</div>
-					<div class="footer-one col-lg-3 col-d-6 col-12 mb-3">
-						<h5 class=" pb-2">Featured</h5>
-						<ul class="text-uppercase list-unstyled">
-							<li><a href="#">Cellphones and Wearables</a></li>
-							<li><a href="#">Gaming</a></li>
-							<li><a href="#">Photography</a></li>
-							<li><a href="#">Virtual Reality</a></li>
-							<li><a href="#">Simulators</a></li>
-						</ul>
-					</div>
-					<div class="footer-one col-lg-3 col-d-6 col-12 mb-3">
-						<h5 class=" pb-2">Contact Us</h5>
-						<div>
-							<h6 class="text-uppercase">Address</h6>
-							<p>737 Ragna Avenue, Johannesburg, South Africa</p>
-						</div>
-						<div>
-							<h6 class="text-uppercase">Phone</h6>
-							<p>+27 701090805</p>
-						</div>
-						<div>
-							<h6 class="text-uppercase">Email</h6>
-							<p>gadgets4nerds.liveblog365.com</p>
-						</div>
-					</div>
-				</div>
-				<div class="copyright mt-5">
-					<div class="row container mx-auto">
-
-						<div class="col-lg-3 col-md-6 col-12 mb-4">
-							<img src="payment.png" alt="">
-						</div>
-						<div class="col-lg-4 col-md-6 col-12" text-nowrap mb-2>
-							<p>Gadgets4Nerds eCommerce © 2022. All Rights Reserved</p>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12">
-							<a href="#"><i class="fab fa-facebook"></i></a>
-							<a href="#"><i class="fab fa-twitter"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-						</div>
-					</div>
-				</div>
-			</footer>
-
-			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-					integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
-					crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
-					integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVC"
-					crossorigin="anonymous"></script>
-
+    </script>
 </body>
-	</html>
+</html>
