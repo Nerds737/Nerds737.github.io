@@ -4,21 +4,25 @@
 <head>
     <meta charset="utf-8" />
     <title>Registration Form</title>
-    <link rel="stylesheet" type="text/css" href="./styleregister.css">
+    <link rel="stylesheet" href="styleregister.css">
 </head>
 <body>
     <div class="registration-form">
         <h1>Registration Here</h1>
-        <form action="index.html" method="post">
+        <form action="index.html" method="post" name="form" onsubmit="return validated()">
             <p>Username</p>
-            <input type="text" name="user" placeholder="Enter name here">
+            <input autocomplete="off" type="text" name="username" placeholder="Enter username here">
+            <div id="user_error">Please enter your Username</div>
             <p>Password</p>
             <input type="password" name="password" placeholder="Enter password here">
+            <div id="pass_error">Please enter your Password</div>
             <p>Email</p>
-            <input type="email" name="nerds.test@gmail.com" placeholder="Enter email adress here">
+            <input autocomplete="off" type="email" name="email" placeholder="Enter email adress here">
+            <div id="email_error">Please enter your Email Address</div>
             <button type="submit">Submit</button>
             <p>Are you already registered? <a href="index.html">Login Here</a> </p>
         </form>
     </div>
+    <script src="RValidation.js"></script>
 </body>
 </html>

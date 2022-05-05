@@ -18,6 +18,21 @@ position: absolute;
 color: #fff;
 }
 
+.registration-form #user_error,
+.registration-form #pass_error,
+.registration-form #email_error {
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    color: #C62828;
+    background: rgba(255, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
+}
+
     .registration-form h1 {
         font-size: 40px;
         text-align: left;

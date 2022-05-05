@@ -4,19 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <title>Login Form</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="login-form">
         <h1>Login Form</h1>
-        <form action="index1.html" method="post">
+        <form action="index1.html" method="post" name="form" onsubmit="return validated()">
             <p>Username</p>
-            <input type="text" name="user" placeholder="username">
+            <input autocomplete="off" type="text" name="username" placeholder="Enter username here">
+            <div id="user_error">Please enter your Username</div>
             <p>Password</p>
-            <input type="password" name="password" placeholder="password">
-            <button type="submit">Login</button>
+            <input type="password" name="password" placeholder="Enter password here">
+            <div id="pass_error">Please enter your Password</div>
+            <button type="submit">Submit</button>
             <p>Not registered yet? <a href="Register.html">Register</a> </p>
         </form>
     </div>
+    <script src="LValidation.js"></script>
 </body>
 </html>
