@@ -9,7 +9,7 @@
 <body>
     <div class="registration-form">
         <h1>Registration Here</h1>
-        <form action="index.html" method="post" name="form" onsubmit="return validated()">
+        <form action="<%= request.getContextPath() %>/index" method="post" name="form" onsubmit="return validated()">
             <p>Username</p>
             <input autocomplete="off" type="text" name="username" placeholder="Enter username here">
             <div id="user_error">Please enter your Username</div>
