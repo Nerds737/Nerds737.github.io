@@ -1,0 +1,18 @@
+<h1>Login Here</h1>
+<% if (messages.error) { %>
+    <%= locals.messages.error %>
+    <% } %>
+<form action="/login" method="POST"
+    <div>
+        <label for="username">Username</label>
+        <input autocomplete="off" type="text" id="username" name="username" required>
+   </div>
+
+   <div> 
+    <label for="password">Password</label>
+    <input autocomplete="off" type="password" id="password" name="password" required>
+</div>
+<button type="submit">Login</button>
+
+<p>Not registered yet? <a href="/register">Register Now</a> </p>
+</form>
